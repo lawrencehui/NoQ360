@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="129px" height="13px" viewBox="0 0 129 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="129px" height="75px" viewBox="0 0 129 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 10</title>
+    <title>Group 3</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="iPhone-6-Copy-4" transform="translate(-317.000000, -871.000000)" fill="#CECDCD">
-            <g id="Group-Copy-2" transform="translate(40.000000, 787.000000)">
-                <g id="Group-3" transform="translate(227.000000, 22.000000)">
-                    <g id="Group-10" transform="translate(50.000000, 0.000000)">
-                        <path d="M3.55271368e-13,62 L129,62 L127.188488,68.7284738 C126.255962,72.1921421 122.586137,75 119.005375,75 L10,75 C3.55271368e-13,75 3.55271368e-13,62 3.55271368e-13,62 Z" id="Rectangle-4"></path>
-                    </g>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="9"></rect>
+        <rect id="path-3" x="0" y="0" width="115" height="56"></rect>
+    </defs>
+    <g id="present" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-6-Copy-4" transform="translate(-317.000000, -809.000000)">
+            <g id="Group-3" transform="translate(317.000000, 809.000000)">
+                <path d="M4.68958206e-13,62 L129,62 L127.188488,68.7284738 C126.255962,72.1921421 122.586137,75 119.005375,75 L10,75 C4.68958206e-13,75 4.68958206e-13,62 4.68958206e-13,62 Z" id="Rectangle-4" fill="#CECDCD"></path>
+                <g id="Group-8" transform="translate(54.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Rectangle-6"></g>
+                    <circle id="Oval-2" fill="#D2D2D2" mask="url(#mask-2)" cx="10.5" cy="8.5" r="8.5"></circle>
+                    <circle id="Oval-6" fill="#52B7DE" mask="url(#mask-2)" cx="10.75" cy="8.25" r="4.25"></circle>
                 </g>
+                <g id="Group-7" transform="translate(9.000000, 7.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Rectangle-5"></g>
+                    <ellipse id="Oval-5" fill="#EAEBEC" mask="url(#mask-4)" cx="57.5" cy="53" rx="57.5" ry="53"></ellipse>
+                </g>
+                <path d="M67,15.5 C99,18 108.5,54.5 108.5,54.5 L92.9919376,54.5 C92.9919376,54.5 89,35 67,15.5 Z" id="Path-7" fill="#F7F7F8"></path>
             </g>
         </g>
     </g>
