@@ -1,4 +1,66 @@
 <template name="boardingPassPage">
-  <button>Click Me boardingPass</button>
-  <p>You've pressed the button {{counter}} times.</p>
+  <div class="boardingPassPage">
+    <div class="boardingPassPageHeader">
+        <div class="boardingPassPageHeaderCancel">Add Info</div>
+    </div>
+    <div class="boardingPassPageContent">
+      <div class="groupSize">
+        <div class="groupSizeHeader">
+          Group Size
+        </div>
+        <div class="groupbuttons">
+          <button class="groupMinus">-</button>
+          <div class="groupHeadCount">01</div>
+          <button class="groupPlus">+</button>
+        </div>
+      </div>
+
+      <div class="groupType">
+        <div class="groupTypeHeader">
+          Group Type
+        </div>
+        <div class="groupTypeContent">
+          <select>
+            <option value="family">Family</option>
+            <option value="solo">Solo Traveler</option>
+            <option value="couple">Couple</option>
+            <option value="elderly">Elderly</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="groupInterets">
+        <div class="groupInterestsHeader">
+          Interests
+        </div>
+        <div class="groupInterestsContent">
+          <form action="demo_form.asp">
+            <input type="checkbox" name="groupInteret" value="Food">Food + Drinks<br>
+            <input type="checkbox" name="groupInteret" value="Sightseeing" checked>Signtseeing<br>
+            <input type="checkbox" name="groupInteret" value="Nature" checked> Nature<br>
+          </form>
+        </div>
+      </div>
+
+      <div class="groupSubmitContainter">
+        <button class="groupSubmitContainter">Go</button>
+      </div>
+
+      <div class="finalPage">
+        <div class="finalPageQuestion">
+        </div>
+        <div class="finalPageOptions">
+          <div class="printOption">
+            <img src="printIconLink">
+            Print
+          </div>
+          <div class="QROption">
+            <img src="qrLink">
+            QR
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </template>
