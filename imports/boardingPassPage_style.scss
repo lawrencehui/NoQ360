@@ -1,0 +1,26 @@
+.boardingPassPage {
+  height: 100%;
+  width: 100%;
+  @extend %flex-column-container;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Lineto';
+
+  .infoInputPageHeader {
+    width: 100%;
+    height: 44px;
+    font-family: 'Lineto';
+    text-transform: uppercase;
+    background-color: #484D64;
+
+    @extend %flex-column-container;
+    justify-content: center;
+    align-items: center;
+
+    .infoInputPageHeaderTitle{
+      // width: 100%;
+      letter-spacing: 0.1rem;
+      color: #fff;
+    }
+  }
+}
