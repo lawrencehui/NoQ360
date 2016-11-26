@@ -1,0 +1,106 @@
+.infoInputPage {
+  height: 100%;
+  width: 100%;
+  @extend %flex-column-container;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Lineto';
+
+  .infoInputPageHeader {
+    width: 100%;
+    height: 44px;
+    font-family: 'Lineto';
+    text-transform: uppercase;
+    background-color: #484D64;
+
+    @extend %flex-column-container;
+    justify-content: center;
+    align-items: center;
+
+    .infoInputPageHeaderTitle{
+      // width: 100%;
+      letter-spacing: 0.1rem;
+      color: #fff;
+    }
+  }
+
+  .infoInputPageContent {
+    height: calc(100% - 44px);
+    width: calc(100% - 48px);
+    background-color: #4F546C;
+    padding: 18px 24px;
+    .groupSize {
+
+      .groupSizeHeader {
+        text-transform: uppercase;
+        padding: 12px 0;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.08rem;
+      }
+
+      .groupInput {
+
+        height: 54px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 27px;
+        .inputDetails {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: calc(100% - 36px);
+          @extend %flex-row-container;
+          justify-content: flex-start;
+          align-items: center;
+          padding-left: 24px;
+          padding-right: 12px;
+
+          .fa {
+            flex: 1 0 0;
+            color: #ddd;
+            font-size: 1.5rem;
+          }
+
+          .groupHeadCount {
+            flex: 5 0 0;
+            font-size: 1.5rem;
+          }
+
+          .btnStyle {
+            border: none;
+            height: 36px;
+            width: 36px;
+            border-radius: 18px;
+            outline: none;
+            color: #fff;
+            font-size: 1.4rem;
+            margin: 0 4px;
+          }
+
+          .groupMinus {
+            // flex: 1 0 0;
+            background-color: #F06C6C;
+
+            &:hover, &:active {
+              background: url(/img/icons/plus.svg);
+            }
+          }
+
+          .groupPlus {
+            // flex: 1 0 0;
+            background-color: #20BB8C;
+          }
+
+
+
+        }
+      }
+    }
+  }
+}
+
+//         -webkit-appearance: none;
+        // -moz-appearance : none;
