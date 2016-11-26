@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="105px" height="66px" viewBox="0 0 105 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>binoculars</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-6-Copy-4" transform="translate(-536.000000, -815.000000)">
+            <g id="binoculars" transform="translate(536.000000, 815.000000)">
+                <g id="Group">
+                    <g fill="#37474F">
+                        <ellipse id="Oval" cx="72.1875" cy="13.2" rx="13.125" ry="13.2"></ellipse>
+                        <ellipse id="Oval" cx="32.8125" cy="13.2" rx="13.125" ry="13.2"></ellipse>
+                        <path d="M102.15625,33 L68.6875,39.6 L36.53125,39.6 L3.0625,33 L12.46875,15.62 C14.875,11.44 19.25,8.8 24.0625,8.8 L81.375,8.8 C86.1875,8.8 90.5625,11.44 92.96875,15.62 L102.15625,33 L102.15625,33 Z" id="Shape"></path>
+                        <ellipse id="Oval" cx="83.125" cy="44" rx="21.875" ry="22"></ellipse>
+                        <ellipse id="Oval" cx="21.875" cy="44" rx="21.875" ry="22"></ellipse>
+                        <ellipse id="Oval" cx="52.5" cy="39.6" rx="10.9375" ry="11"></ellipse>
+                    </g>
+                    <ellipse id="Oval" fill="#546E7A" cx="52.5" cy="39.6" rx="4.375" ry="4.4"></ellipse>
+                    <g transform="translate(6.562500, 28.600000)" id="Oval" fill="#AA00FF">
+                        <ellipse cx="76.5625" cy="15.4" rx="15.3125" ry="15.4"></ellipse>
+                        <ellipse cx="15.3125" cy="15.4" rx="15.3125" ry="15.4"></ellipse>
+                    </g>
+                    <g transform="translate(13.125000, 35.200000)" id="Shape" fill="#CE93D8">
+                        <path d="M78.09375,3.74 C75.90625,1.32 73.0625,0 70,0 C66.9375,0 63.875,1.32 61.90625,3.74 C61.03125,4.62 61.25,5.94 62.125,6.82 C63,7.7 64.3125,7.48 65.1875,6.6 C67.8125,3.74 72.40625,3.74 75.03125,6.6 C75.46875,7.04 76.125,7.26 76.5625,7.26 C77,7.26 77.65625,7.04 78.09375,6.6 C78.96875,5.94 78.96875,4.62 78.09375,3.74 L78.09375,3.74 Z"></path>
+                        <path d="M8.75,0 C5.6875,0 2.625,1.32 0.65625,3.74 C-0.21875,4.62 5.48588952e-14,5.94 0.875,6.82 C1.75,7.7 3.0625,7.48 3.9375,6.6 C6.5625,3.74 11.15625,3.74 13.78125,6.6 C14.21875,7.04 14.875,7.26 15.3125,7.26 C15.75,7.26 16.40625,7.04 16.84375,6.6 C17.71875,5.72 17.71875,4.4 17.0625,3.52 C14.875,1.32 11.8125,0 8.75,0 L8.75,0 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
