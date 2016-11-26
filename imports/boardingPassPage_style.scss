@@ -1,5 +1,6 @@
 .boardingPassPage {
-  height: 100%;
+  // height: 100%;
+  overflow-y: scroll;
   width: 100%;
   @extend %flex-column-container;
   justify-content: flex-start;
@@ -34,4 +35,24 @@
       align-items: center;
     }
   }
+
+  .buddha-container{
+    img {
+      height: 120px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .infoInputMiddleAreaContainer{
+    overflow-y: scroll;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .infoBottomContainer{
+    overflow-y: scroll;
+  }
+
 }

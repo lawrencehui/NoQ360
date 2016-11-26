@@ -3,7 +3,7 @@ Template.infoInputPage.helpers({
 });
 
 Template.infoInputPage.events({
-	'click .goToBoardingPass'(){
+	'click .groupSubmit'(){
 		console.log('I got clicked');
     Blaze.renderWithData(Template.boardingPassPage, {data: ''}, $('.boardingPass-modal').get(0));
 
