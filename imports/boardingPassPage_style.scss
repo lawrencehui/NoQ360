@@ -47,12 +47,15 @@
 
   .infoInputMiddleAreaContainer{
     background-color: #484D64;
-    position: relative;
     overflow-y: scroll;
+    position: relative;
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
     .clipCircleContainer{
+      background-color: #fff;
+      position: relative;
+      height: 50px;
       .clipCircle{
         background-color: #484D64;
         position: absolute;
@@ -67,6 +70,68 @@
     }
     .infoInputMiddleArea{
       background-color: #fff;
+      .infoDepartDateContainer{
+        width: 100%;
+        text-align: center;
+        .infoDepartDate{
+          color: #CFCCCC;
+          font-size: 1.4rem;
+        }
+        .infoMiddleTitle{
+          color: #7C7C7C;
+          font-size: 2rem;
+        }
+        .infoTicketDescription{
+          color: #CFCCCC;
+          font-size: 1.6rem;
+        }
+      }
+
+      .greyline{
+        width: 100%;
+        border-color: #CFCCCC;
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      .infoQRContainer{
+        padding-bottom: 5%;
+        padding-top: 5%;
+        width: 100%;
+        @extend %flex-row-container;
+        .clockIcon{
+          img{        
+            height: auto;
+            width: 10%;
+          }
+        }
+        .infoETAContainer{
+          width: 45%;
+          text-align: center;
+          .infoETA{
+            color: #E56B6B;
+            font-size: 2.5rem;
+          }
+          .infoETAText{
+            color: #CFCCCC;
+            font-size: 1.6rem;
+          }
+        }
+
+        .interestsContainer{
+          width: 100%;
+          height: 400px;
+          text-align: center;
+          .interestImageContainer{
+            width: 100%;
+            img.interestImage{
+              width: 70%;
+              height: auto;
+            }
+          }
+        }
+      }
+
     }
   }
   
