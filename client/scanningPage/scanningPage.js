@@ -1,7 +1,7 @@
 Template.scanningPage.helpers({
-	getToday(){
-		return new Date()
-	}
+	// getToday(){
+	// 	return new Date()
+	// }
 
 });
 
@@ -11,7 +11,7 @@ Template.scanningPage.events({
 		cordova.plugins.barcodeScanner.scan(
 			(result)=>{
 				console.log(result)
-				alert(result);
+				Router.go('infoInputPage');
 			}
 		);
 	}
@@ -27,7 +27,7 @@ Template.scanningPage.onRendered(function(){
 	cordova.plugins.barcodeScanner.scan(
 		(result)=>{
 			console.log(result)
-			alert(result);
+			Router.go('infoInputPage');
 		}
 	);
 
