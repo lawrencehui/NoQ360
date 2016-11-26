@@ -114,8 +114,6 @@
         width: 100%;
         height: 54px;
         position: relative;
-        background-color: #fff;
-        border-radius: 27px;
         .groupTypeContent{
           height: 100%;
           width: 100%;
@@ -123,10 +121,20 @@
           select{
             height: 100%;
             width: 100%;
+            background-color: #fff;
+            padding-left: 30px;
+            border-radius: 50px;
+            font-size: 1.35rem;
+            letter-spacing: 0.05rem;
             -webkit-appearance: none;
             -moz-appearance : none;
             option{
-
+              -webkit-appearance: none;
+              -moz-appearance : none;
+              height: 100%;
+              width: 100%;
+              background-color: #fff;
+              border-radius: 50px;
             }
           }
         }
