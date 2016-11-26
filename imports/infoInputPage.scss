@@ -135,7 +135,111 @@
         }
       }
     }
+
+    .groupInterests{
+      .groupInterestsHeader{
+        text-transform: uppercase;
+        padding: 12px 0;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.08rem;
+      }
+      .groupInterestsContent{
+        justify-content: flex-start;
+        align-items: center;
+        @extend %flex-row-container;
+        .interestContainter{
+          @extend %flex-column-container;
+          justify-content: flex-start;
+          flex: 1 0 0;
+          align-items: center;
+          .interestImageContainer{
+            height: 72px;
+            padding-top: 8px;
+            @extend %flex-column-container;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          .interestDescription{
+            height: 24px;
+            @extend %flex-column-container;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          .checkboxContainer{
+            @extend %flex-column-container;
+            padding-top: 8px;
+            justify-content: flex-start;
+            align-items: center;
+            height: 24px;
+            input{
+              font-size: 2.5em;
+            }
+          }
+        } 
+      }
+    }
   }
+}
+
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: 0.8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
 }
 
 //         -webkit-appearance: none;
