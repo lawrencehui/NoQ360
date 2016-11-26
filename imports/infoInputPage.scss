@@ -162,7 +162,11 @@
             align-items: center;
           }
           .interestDescription{
+            color: #fff;
             height: 24px;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.04rem;
             @extend %flex-column-container;
             justify-content: flex-start;
             align-items: center;
@@ -183,7 +187,7 @@
   }
 }
 
-.checkbox label:after, 
+.checkbox label:after,
 .radio label:after {
     content: '';
     display: table;
@@ -200,6 +204,7 @@
     height: 1.3em;
     float: left;
     margin-right: .5em;
+    background-color: #20BB8C;
 }
 
 .radio .cr {
@@ -229,12 +234,14 @@
     transform: scale(3) rotateZ(-20deg);
     opacity: 0;
     transition: all .3s ease-in;
+    color: #fff;
 }
 
 .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
 .radio label input[type="radio"]:checked + .cr > .cr-icon {
     transform: scale(1) rotateZ(0deg);
     opacity: 1;
+    color: #fff;
 }
 
 .checkbox label input[type="checkbox"]:disabled + .cr,
