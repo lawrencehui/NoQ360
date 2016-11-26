@@ -99,6 +99,42 @@
         }
       }
     }
+
+    .groupType{
+      .groupTypeHeader{
+        text-transform: uppercase;
+        padding: 12px 0;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.08rem;
+      }
+      .groupTypeContentContainer{
+        width: 100%;
+        height: 54px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 27px;
+        .groupTypeContent{
+          height: 100%;
+          width: 100%;
+          @extend %flex-row-container;
+          select{
+            height: 100%;
+            width: 100%;
+            -webkit-appearance: none;
+            -moz-appearance : none;
+            option{
+
+            }
+          }
+        }
+        .dropButton{
+          position: fixed;
+          right: 3rem;
+        }
+      }
+    }
   }
 }
 
