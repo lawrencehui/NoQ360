@@ -43,13 +43,15 @@
 
       .groupInput {
         height: 54px;
-        position: relative;
-        background-color: #fff;
-        border-radius: 27px;
+        // position: relative
+        @extend %flex-row-container;
+        justify-content: flex-start;
+        align-items: center;
+
         .inputDetails {
-          position: absolute;
-          left: 0;
-          top: 0;
+          position: relative;
+          background-color: #fff;
+          border-radius: 27px;
           height: 100%;
           width: calc(100% - 36px);
           @extend %flex-row-container;
@@ -57,45 +59,59 @@
           align-items: center;
           padding-left: 24px;
           padding-right: 12px;
+          margin-right: 8px;
 
           .fa {
-            flex: 1 0 0;
+            // flex: 1 0 0;
             color: #ddd;
             font-size: 1.5rem;
+            position: absolute;
+            left: 20px;
+            top: 14px;
           }
 
           .groupHeadCount {
-            flex: 5 0 0;
+            // flex: 5 0 0;
             font-size: 1.5rem;
+            position: absolute;
+            left: 56px;
+            top: 11px;
           }
 
-          .btnStyle {
-            border: none;
-            height: 36px;
-            width: 36px;
-            border-radius: 18px;
-            outline: none;
-            color: #fff;
-            font-size: 1.4rem;
-            margin: 0 4px;
+        }
+        .btnStyle {
+          border: none;
+          height: 36px;
+          width: 36px;
+          border-radius: 18px;
+          outline: none;
+          color: #fff;
+          font-size: 1.4rem;
+          margin: 0 4px;
+          transition: all 0.2s linear;
+
+          img {
+            height: 16px;
+            width: 16px;
           }
+        }
 
-          .groupMinus {
-            // flex: 1 0 0;
-            background-color: #F06C6C;
+        .groupMinus {
+          // flex: 1 0 0;
+          background-color: #F06C6C;
 
-            &:hover, &:active {
-              background: url(/img/icons/plus.svg);
-            }
+          &:hover, &:active {
+            background-color: darken(#F06C6C, 20);
           }
+        }
 
-          .groupPlus {
-            // flex: 1 0 0;
-            background-color: #20BB8C;
+        .groupPlus {
+          // flex: 1 0 0;
+          background-color: #20BB8C;
+
+          &:hover, &:active {
+            background-color: darken(#20BB8C, 10);
           }
-
-
-
         }
       }
     }
@@ -114,34 +130,46 @@
         width: 100%;
         height: 54px;
         position: relative;
-        .groupTypeContent{
+
+        select{
+          outline: none;
           height: 100%;
+          height: 54px;
           width: 100%;
-          @extend %flex-row-container;
-          select{
+          background-color: #fff;
+          padding-left: 30px;
+          border-radius: 50px;
+          font-size: 1.35rem;
+          letter-spacing: 0.05rem;
+          -webkit-appearance: none;
+          -moz-appearance : none;
+          option{
+            -webkit-appearance: none;
+            -moz-appearance : none;
             height: 100%;
             width: 100%;
             background-color: #fff;
-            padding-left: 30px;
             border-radius: 50px;
-            font-size: 1.35rem;
-            letter-spacing: 0.05rem;
-            -webkit-appearance: none;
-            -moz-appearance : none;
-            option{
-              -webkit-appearance: none;
-              -moz-appearance : none;
-              height: 100%;
-              width: 100%;
-              background-color: #fff;
-              border-radius: 50px;
-            }
           }
         }
+
         .dropButton{
-          position: fixed;
-          right: 3rem;
+          position: absolute;
+          top: 18px;;
+          right: 24px;
+          img {
+            height: 18px;
+            width: 18px;
+          }
         }
+
+        // .groupTypeContent{
+        //   height: 100%;
+        //   width: 100%;
+        //   @extend %flex-row-container;
+        //
+        // }
+
       }
     }
 
@@ -195,7 +223,7 @@
               font-size: 2.5em;
             }
           }
-        } 
+        }
       }
     }
 
@@ -211,6 +239,11 @@
         margin: 0 4px;
         width: 100%;
         background-color: #20BB8C;
+        transition: all 0.2s linear;
+
+        &:hover, &active {
+          background-color: darken(#20BB8C, 10);
+        }
       }
     }
   }
@@ -227,13 +260,14 @@
 .radio .cr {
     position: relative;
     display: inline-block;
-    border: 1px solid #a9a9a9;
+    border: 2px solid #a9a9a9;
     border-radius: .25em;
     width: 1.3em;
     height: 1.3em;
     float: left;
+    margin-left: 0.3rem;
     margin-right: .5em;
-    background-color: #20BB8C;
+    background-color: transparent;
 }
 
 .radio .cr {
@@ -242,11 +276,11 @@
 
 .checkbox .cr .cr-icon,
 .radio .cr .cr-icon {
-    position: absolute;
-    font-size: 0.8em;
-    line-height: 0;
-    top: 50%;
-    left: 20%;
+      position: absolute;
+      font-size: 0.8em;
+      line-height: 0;
+      top: 50%;
+      left: 20%;
 }
 
 .radio .cr .cr-icon {
