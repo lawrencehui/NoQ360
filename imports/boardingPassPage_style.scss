@@ -146,18 +146,28 @@
           @extend %flex-column-container;
           justify-content: center;
           align-items: center;
+
+          #qrcode{
+            canvas {
+              width: 100%;
+            }
+            width: 72px;
+            height: 72px;
+          }
         }
       }
 
       .interestsContainer{
-        width: 100%;
+        width: calc(100% - 48px);
         padding: 12px 24px;
         // height: 400px;
         // text-align: center;
 
         .interestCardView {
+          margin-bottom: 12px;
           .speicalBar {
-            width: calc(100% - 48px);
+            // width: calc(100% - 54px);
+            width: calc(100% - 8px);
             background-color: #FFCD00;
             color: #fff;
             @extend %flex-row-container;
@@ -174,8 +184,13 @@
 
           }
 
+          .show-none{
+            display: none;
+          }
+
           .interestImageContainer{
-            width: calc(100% - 48px);
+            // width: calc(100% - 48px);
+            width: 100%;
             img.interestImage{
               width: 100%;
               height: 150px;
@@ -187,7 +202,8 @@
 
           .interestInfoContainer{
             margin-top: -4px;
-            width: calc(100% - 48px - 24px);
+            // width: calc(100% - 48px - 24px);
+            width: calc(100% - 24px);
             background-color: #F3F3F3;
             padding: 12px;
             .interestInfoHeader{

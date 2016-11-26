@@ -15,7 +15,7 @@
 			</div>
 			<div class="infoInputMiddleArea">
 				<div class="infoDepartDateContainer">
-					<div class="infoDepartDate">26 NOV 2016</div>
+					<div class="infoDepartDate">{{getToday}}</div>
 					<div class="infoMiddleTitle">Standard Round Trip</div>
 					<div class="infoTicketDescription">Std. Single exTC Adult</div>
 					<!-- <div class="closeBtn"></div> -->
@@ -40,46 +40,49 @@
 					</div>
 
 					<div class="qrCodePlaceHolder">
-						<div class="qrcode">asd</div>
+						<div id="qrcode"></div>
 					</div>
 				</div>
 
 				<div class="interestsContainer">
+					{{#each getSuggestions}}
 					<div class="interestCardView">
-						<!-- {{#each getSuggestions}} -->
-						<div class="speicalBar">
+
+						<div class="speicalBar {{checkOffer offer}}">
 							<div class="fa fa-star"></div>
 							<div class="speacialText">
-								today: chocolate buy 1 get 1 free
+								{{offer}}
+								<!-- {{offer}} -->
 							</div>
 						</div>
 						<div class="interestImageContainer">
 							<!-- this is image -->
-							<img class="interestImage" src="/img/restaurants/coffee.png">
+							<img class="interestImage" src="/img/shops/{{img}}">
 						</div>
 						<div class="interestInfoContainer">
 							<div class="interestInfoHeader">
-								Pacific Coffee Company</div>
+								{{name}}
+							</div>
 							<div class="interestInfoAddress">
 								<div class="fa fa-map-marker"></div>
 								<div class="addressText">
-									2L2 243, CityGate, Tat Tung Road
+									{{location}}
 								</div>
 
 							</div>
 							<div class="interestInfoEstimates">
 								<div class="interestInfoEventDuration">
 									<div class="fa fa-clock-o"></div>
-									45 minutes
+									{{time}}
 								</div>
 								<div class="interestInfoTransitTime">
 									<img class="walk-icon" src="/img/icons/walk-icon.svg">
-									12 minutes
+									{{walk}}
 								</div>
 							</div>
 						</div>
-						<!-- {{/each}} -->
 					</div>
+					{{/each}}
 
 				</div>
 			</div>
