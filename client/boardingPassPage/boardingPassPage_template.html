@@ -15,12 +15,14 @@
 			</div>
 			<div class="infoInputMiddleArea">
 				<div class="infoDepartDateContainer">
-					<div class="infoDepartDate">26 Nov 2016</div>
+					<div class="infoDepartDate">26 NOV 2016</div>
 					<div class="infoMiddleTitle">Standard Round Trip</div>
 					<div class="infoTicketDescription">Std. Single exTC Adult</div>
 					<!-- <div class="closeBtn"></div> -->
 				</div>
-				<div class="greyline"></div>
+				<div class="greylineContainer">
+					<div class="greyline"></div>
+				</div>
 
 				<div class="infoQRContainer">
 
@@ -33,37 +35,52 @@
 							10:30
 						</div>
 						<div class="infoETAText">
-							Depart Time
+							Boarding Time
 						</div>
 					</div>
 
 					<div class="qrCodePlaceHolder">
-						QR Code
+						<div class="qrcode">asd</div>
 					</div>
 				</div>
-	
+
 				<div class="interestsContainer">
-					<div class="interestImageContainer">
-						<img class="interestImage" src="/img/restaurants/coffee.png">
-					</div>
-					<div class="interestInfoContainer">
-						<div class="interestInfoHeader">
-							Pacific Coffee Company</div>
-						<div class="interestInfoAddress">
-							<div class="fa fa-check"></div>
-							2L2 243, CityGate, Tat Tung Road
-						</div>
-						<div class="interestInfoEstimates">
-							<div class="interestInfoEventDuration">
-								<div class="fa fa-check"></div>
-								45 minutes
-							</div>
-							<div class="interestInfoTransitTime">
-								<div class="fa fa-check"></div>
-								12 minutes
+					<div class="interestCardView">
+						<!-- {{#each getSuggestions}} -->
+						<div class="speicalBar">
+							<div class="fa fa-star"></div>
+							<div class="speacialText">
+								today: chocolate buy 1 get 1 free
 							</div>
 						</div>
+						<div class="interestImageContainer">
+							<!-- this is image -->
+							<img class="interestImage" src="/img/restaurants/coffee.png">
+						</div>
+						<div class="interestInfoContainer">
+							<div class="interestInfoHeader">
+								Pacific Coffee Company</div>
+							<div class="interestInfoAddress">
+								<div class="fa fa-map-marker"></div>
+								<div class="addressText">
+									2L2 243, CityGate, Tat Tung Road
+								</div>
+
+							</div>
+							<div class="interestInfoEstimates">
+								<div class="interestInfoEventDuration">
+									<div class="fa fa-clock-o"></div>
+									45 minutes
+								</div>
+								<div class="interestInfoTransitTime">
+									<img class="walk-icon" src="/img/icons/walk-icon.svg">
+									12 minutes
+								</div>
+							</div>
+						</div>
+						<!-- {{/each}} -->
 					</div>
+
 				</div>
 			</div>
 		</div>
