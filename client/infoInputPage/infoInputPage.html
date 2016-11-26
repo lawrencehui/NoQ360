@@ -14,7 +14,7 @@
         <div class="groupInput">
           <div class="inputDetails">
             <div class="fa fa-user"></div>
-            <div class="groupHeadCount">01</div>
+            <div class="groupHeadCount">{{selectedNum}}</div>
           </div>
           <button class="groupMinus btnStyle">
             <img class="btnStyle" src="/img/icons/minus-nocircle.svg">
@@ -30,7 +30,7 @@
           Group Type
         </div>
         <div class="groupTypeContentContainer">
-            <select>
+            <select class="groupTypeSelect">
               <option value="family">Family</option>
               <option value="solo">Solo Traveler</option>
               <option value="couple">Couple</option>
@@ -56,7 +56,7 @@
             </div>
             <div class="checkboxContainer checkbox">
               <label>
-                <input type="checkbox" value="shopping" checked>
+                <input class="shoppingCb" type="checkbox" value="shopping">
                 <span class="cr"><i class="cr-icon fa fa-check"></i></span>
               </label>
             </div>
@@ -71,7 +71,7 @@
             </div>
             <div class="checkboxContainer checkbox">
               <label>
-                <input type="checkbox" value="food" checked>
+                <input class="foodCb" type="checkbox" value="food">
                 <span class="cr"><i class="cr-icon fa fa-check"></i></span>
               </label>
             </div>
@@ -86,7 +86,7 @@
             </div>
             <div class="checkboxContainer checkbox">
               <label>
-                <input type="checkbox" value="sightseeing" checked>
+                <input class="sightseeingCb" type="checkbox" value="sightseeing">
                 <span class="cr"><i class="cr-icon fa fa-check"></i></span>
               </label>
             </div>

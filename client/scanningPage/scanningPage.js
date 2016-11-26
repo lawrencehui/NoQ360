@@ -11,6 +11,7 @@ Template.scanningPage.events({
 		cordova.plugins.barcodeScanner.scan(
 			(result)=>{
 				console.log(result)
+				Session.set('ticketCode', result);
 				Router.go('infoInputPage');
 			}
 		);
