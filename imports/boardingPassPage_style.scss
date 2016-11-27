@@ -1,12 +1,16 @@
 .boardingPassPage {
   height: 100%;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
   @extend %flex-column-container;
   justify-content: flex-start;
   align-items: center;
   font-family: 'Lineto';
   background-color: white;
+  // &.disable-scroll-bounce {
+  //   position: fixed;
+  // }
 
   .infoInputPageHeader {
     width: 100%;
@@ -49,7 +53,7 @@
   }
 
   .infoInputMiddleAreaContainer{
-    margin-top: -4px;
+    margin-top: -5px;
     background-color: #35385B;
 
     position: relative;

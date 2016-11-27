@@ -34,18 +34,21 @@ Template.infoInputPage.events({
 		data.interest = interest;
 
 		console.log(data)
-		// Meteor.call('addNewQueue', data, (err, result)=>{
-		// 	console.log('in addNewQueue');
-		// 	console.log(result);
-		// 	passdata = Object.assign({}, data, {queueId: result})
-		// })
+		Meteor.call('addNewQueue', data, (err, result)=>{
+			console.log('in addNewQueue');
+			console.log(result);
+			passdata = Object.assign({}, data, {queueId: result})
 
-		Blaze.renderWithData(Template.boardingPassPage, {data }, $('.boardingPass-modal').get(0));
+			Blaze.renderWithData(Template.boardingPassPage, {passdata }, $('.boardingPass-modal').get(0));
 
-		Meteor.setTimeout(function(){
-			$('.boardingPass-modal').addClass('open');
-			$('.boardingPass-modal').addClass('blackOverlay');
-		}, 100);
+			Meteor.setTimeout(function(){
+				$('.boardingPass-modal').addClass('open');
+				$('.boardingPass-modal').addClass('blackOverlay');
+			}, 100);
+
+		})
+
+
 
 
 	}

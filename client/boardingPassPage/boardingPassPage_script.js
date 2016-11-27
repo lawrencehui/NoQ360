@@ -26,7 +26,9 @@ Template.boardingPassPage.helpers({
 });
 
 Template.boardingPassPage.events({
-
+	// 'scroll .infoInputPageContent'(){
+	// 	console.log('being scrolled');
+	// }
 
 });
 

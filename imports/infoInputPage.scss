@@ -91,19 +91,24 @@
         }
         .btnStyle {
           border: none;
-          height: 36px;
-          width: 36px;
-          border-radius: 18px;
+          height: 48px;
+          width: 48px;
+          min-width: 48px;
+          border-radius: 24px;
           outline: none;
           color: #fff;
           font-size: 1.4rem;
+          padding: 0;
           margin: 0 4px;
           transition: all 0.2s linear;
+          // @extend %flex-column-container;
+          // justify-content: center;
+          // align-items: center;
 
-          img {
-            height: 16px;
-            width: 16px;
-          }
+          // img {
+          //   height: 16px;
+          //   width: 16px;
+          // }
         }
 
         .groupMinus {
@@ -117,6 +122,7 @@
 
         .groupPlus {
           // flex: 1 0 0;
+
           background-color: #20BB8C;
 
           &:hover, &:active {
@@ -255,6 +261,10 @@
             height: 24px;
             input{
               font-size: 2.5em;
+              height: 32px;
+              width: 32px;
+              background:rgba(255,255,255,0.3);
+              // -webkit-appearance: none;
             }
           }
         }
@@ -283,68 +293,65 @@
   }
 }
 
-.checkbox label:after,
-.radio label:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.checkbox .cr,
-.radio .cr {
-    position: relative;
-    display: inline-block;
-    border: 2px solid #a9a9a9;
-    border-radius: .25em;
-    width: 1.3em;
-    height: 1.3em;
-    float: left;
-    margin-left: 0.3rem;
-    margin-right: .5em;
-    background-color: transparent;
-}
-
-.radio .cr {
-    border-radius: 50%;
-}
-
-.checkbox .cr .cr-icon,
-.radio .cr .cr-icon {
-      position: absolute;
-      font-size: 0.8em;
-      line-height: 0;
-      top: 50%;
-      left: 20%;
-}
-
-.radio .cr .cr-icon {
-    margin-left: 0.04em;
-}
-
-.checkbox label input[type="checkbox"],
-.radio label input[type="radio"] {
-    display: none;
-}
-
-.checkbox label input[type="checkbox"] + .cr > .cr-icon,
-.radio label input[type="radio"] + .cr > .cr-icon {
-    transform: scale(3) rotateZ(-20deg);
-    opacity: 0;
-    transition: all .3s ease-in;
-    color: #fff;
-}
-
-.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
-.radio label input[type="radio"]:checked + .cr > .cr-icon {
-    transform: scale(1) rotateZ(0deg);
-    opacity: 1;
-    color: #fff;
-}
-
-.checkbox label input[type="checkbox"]:disabled + .cr,
-.radio label input[type="radio"]:disabled + .cr {
-    opacity: .5;
-}
-
-//         -webkit-appearance: none;
-        // -moz-appearance : none;
+// .checkbox label:after,
+// .radio label:after {
+//     content: '';
+//     display: table;
+//     clear: both;
+// }
+//
+// .checkbox .cr,
+// .radio .cr {
+//     position: relative;
+//     display: inline-block;
+//     border: 2px solid #a9a9a9;
+//     border-radius: .25em;
+//     width: 1.3em;
+//     height: 1.3em;
+//     float: left;
+//     margin-left: 0.3rem;
+//     margin-right: .5em;
+//     background-color: transparent;
+// }
+//
+// .radio .cr {
+//     border-radius: 50%;
+// }
+//
+// .checkbox .cr .cr-icon,
+// .radio .cr .cr-icon {
+//       position: absolute;
+//       font-size: 0.8em;
+//       line-height: 0;
+//       top: 50%;
+//       left: 20%;
+// }
+//
+// .radio .cr .cr-icon {
+//     margin-left: 0.04em;
+// }
+//
+// .checkbox label input[type="checkbox"],
+// .radio label input[type="radio"] {
+//     display: none;
+// }
+//
+// .checkbox label input[type="checkbox"] + .cr > .cr-icon,
+// .radio label input[type="radio"] + .cr > .cr-icon {
+//     transform: scale(3) rotateZ(-20deg);
+//     opacity: 0;
+//     transition: all .3s ease-in;
+//     color: #fff;
+// }
+//
+// .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+// .radio label input[type="radio"]:checked + .cr > .cr-icon {
+//     transform: scale(1) rotateZ(0deg);
+//     opacity: 1;
+//     color: #fff;
+// }
+//
+// .checkbox label input[type="checkbox"]:disabled + .cr,
+// .radio label input[type="radio"]:disabled + .cr {
+//     opacity: .5;
+// }
