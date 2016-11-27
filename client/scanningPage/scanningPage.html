@@ -1,5 +1,21 @@
 <template name="scanningPage">
-  <button class="scanBtn">
-    Scan me
-  </button>
+  <div class="scanningPage">
+    <div class="scanningPageHeader">
+      <!-- <div class="backBtn"></div> -->
+      <div class="statusBarHeader"></div>
+      <div class="scanningPageHeaderTitle">NoQ360</div>
+      <!-- <div class="closeBtn"></div> -->
+    </div>
+    <div class="scanningPageContent">
+      <div class="ticketNumber">
+        <div class="ticketNumberHeader">
+          <input class="ticketNumber" type="textfield" placeholder="Pleaes input your ticket number"/>
+        </div>
+      </div>
+
+      <div class="scanSubmitContainter">
+        <button class="scanSubmit scanBtn">Scan</button>
+      </div>
+    </div>
+  </div>
 </template>
