@@ -6,7 +6,8 @@ App.setPreference('StatusBarStyle', 'default');
 // App.setPreference('FadeSplashScreen', 'true');
 // App.setPreference('FadeSplashScreenDuration', '500');
 App.accessRule("*");
-App.accessRule('http://192.168.8.103');
+App.accessRule("http://192.168.8.103");
+App.accessRule("http://128.199.89.246");
 
 // App.icons({
 //   // iOS

@@ -14,7 +14,7 @@ Template.boardingPassPage.helpers({
 		let roundedMinute = 5 * Math.round( moment(timeETA).minutes() / 5 );
 		console.log('roundedMinute', roundedMinute);
 
-		return moment().hours(timeETA.hours()).minutes(roundedMinute).format('hh:mm')
+		return moment().hours(timeETA.hours()).minutes(roundedMinute).format('HH:mm')
 	},
 	getSuggestions(){
 		const OptNamePairs = {
